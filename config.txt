@@ -1,0 +1,23 @@
+# This is an ENV file. Format: SETTING=VALUE
+
+# This is a template string - it allows things to be appended to the start or end of it. For example:
+# STRING=${word}Box - outputs TestBox
+# STRING=Box${word} - outputs BoxTest
+# STRING=${word} - outputs Test (default)
+# ${word} is the word. Make sure not to set it to anything else or the code will error.
+STRING=${word}Gens
+
+# Is the output file deleted or left how it is to on program start?
+UNLINK_AT_START=true
+
+# The file to output to
+OUTPUTFILE=words.txt
+
+# The number of words to generate
+NUMWORDS=15000
+
+# Debug. DO NOT enable unless you want a lot of spam in your console (logs all words that are not available)
+DEBUG=false
+
+# Log errors (should be left on true)
+ERRORS=true
